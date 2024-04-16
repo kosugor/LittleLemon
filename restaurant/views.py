@@ -19,7 +19,7 @@ def index(request):
 class MenuItemsView(ListCreateAPIView):
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
 
 
 class SingleMenuItemView(RetrieveUpdateAPIView, DestroyAPIView):
